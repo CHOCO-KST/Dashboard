@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-soft: #dddddd;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header,
+.side-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.sidebar-logo {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header {
+    top: .5rem !important;
+}
+
+.sidebar-menu {
+    width: 100%;
+    background-color: var(--primary-soft);
+    box-shadow: inset 0 5px 10px 5px rgba(0, 0, 0, .2);
+    overflow-x: hidden;
+}
+
+.sidebar-menu::-webkit-scrollbar {
+    width: 0;
+}
+
+#user1 {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.search-bar {
+    width: 60%;
+}
+
+.status-card,
+.chartLineCard {
+    transition: .25s;
+    box-shadow: 0 0 7.5px 5px rgba(0, 0, 0, .15);
+    cursor: pointer;
+}
+
+.chartLineCard:hover,
+.status-card:hover  {
+    transform: scale(1.01);
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, .2);
+}
+
+.status-card:active {
+    transform: scale(1.05);
+}
+
+.chartUserImg {
+    border: solid 1px rgb(63, 92, 255);
+    margin-left: -10px;
+}
+
+.product-card {
+    height: 60%;
+}
+
+.product-slick {
+    margin-top: -11rem;
+}
+
+.slick-img-div {
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.max-display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    padding: 5rem;
+}
+
+.nav-item:hover {
+    background-color: #a6bbff5e;
+}
+.nav-divider {
+    padding: 1rem;
+}
+
+.nav-item-noti {
+    font-size: x-small;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgb(131, 154, 255);
+    margin-right: .5rem;
+}
+
+@media screen and (min-width: 1500px) {
+    .product-slick {
+        margin-top: -8rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .product-card {
+        height: 50%;
+    }
+
+    .product-slick {
+        margin-top: -12rem;
+    }
+    .slick-img-div {
+        height: 250px;
+    }
+    .product-card {
+        height: 50%;
+    }
+    .product-slick {
+        margin-top: -9rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .sidebar-toggle {
+        display: block !important;
+        width: 100%;
+        z-index: 2;
+        position: fixed;
+        background-color: rgba(0, 0, 0, .2);
+    }
+    .sidebar-bg {
+        display: block !important;
+    }
+    .sidebar-menu {
+        width: 40%;
+        z-index: 3; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0 5px 7.5px 5px rgba(0, 0, 0, .25);
+    }
+    .slick-img-div {
+        height: 200px;
+    }
+    .search-bar {
+        width: 75%;
+    }
+    .product-card {
+        height: 40%;
+    }
+    .product-slick {
+        margin-top: -9rem;
+    }
+    .max-display {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .product-card {
+        height: 70%;
+    }
+    .product-slick {
+        margin-top: -6rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .search-bar-div {
+        display: none;
+    }
+    .product-card {
+        width: 100%;
+        height: 75%;
+        margin-top: 4rem;
+    }
+    .product-slick {
+        margin-top: -7rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .sidebar-menu {
+        width: 75%;
+    }
+    .search-bar {
+        width: 100%;
+    }
+    .chartUserImg {
+        width: 2rem;
+        height: 2rem;
+    }
+}

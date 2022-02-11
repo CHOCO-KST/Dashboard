@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <link rel="stylesheet" href="vendor/slick-master/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class=" main container-fluid">
+        <div class=" row">
+            <!-- sidebar start -->
+            <div class="side-bar col-lg-3 col-xl-2 vh-100 d-none d-lg-block p-0">
+                <div class=" sidebar-bg w-100 h-100 p-0 m-0 d-block d-lg-none"></div>
+                <div class=" sidebar-menu h-100 p-3 animate__animated overflow-scroll">
+                    <!-- sidebar-logo start -->
+                    <div class=" sidebar-logo w-100 p-2 d-flex justify-content-between align-items-center border-bottom pb-2 mb-3 bg-light rounded">
+                        <div class=" d-flex align-items-center">
+                            <i class=" feather-shopping-bag text-white bg-primary p-1 rounded" style="font-size: 2rem;"></i>
+                            <span class=" fw-bolder ms-2 text-primary" style="font-size: x-large;">KS Shop</span>
+                        </div>
+                        <button class=" close-sidebar-btn btn d-block d-lg-none">
+                            <i class="feather feather-x-circle" style="font-size: 2rem;"></i>
+                        </button>
+                    </div>
+                    <!-- sidebar-logo end -->
+
+                    <!-- sidebar navigation start -->
+                    <ul class=" nav nav-pills flex-column mb-auto">
+                        
+                        <!-- Account Settings -->
+                        <li class=" text-black-50 fw-bold fs-6 ps-2 mb-2">
+                            Control Ccenter
+                        </li>
+                        <hr class=" mb-1 mt-0">
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link active">
+                                <i class=" mx-2 feather feather-home"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link">
+                                <i class=" mx-2 feather feather-info"></i>
+                                Overview
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link d-flex justify-content-between align-items-center">
+                                <div class=" d-flex align-items-center">
+                                    <i class=" mx-2 feather feather-bell"></i>
+                                    Updates
+                                </div>
+                                <span class=" nav-item-noti bg-white text-black">21</span>
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link">
+                                <i class=" mx-2 feather feather-settings"></i>
+                                Settings
+                            </a>
+                        </li>
+                        <li class=" nav-divider"></li>
+                        
+                        <!-- Manage Orders -->
+                        <li class=" text-black-50 fw-bold fs-6 ps-2 mb-2">
+                            Orders
+                        </li>
+                        <hr class=" mb-1 mt-0">
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link d-flex justify-content-between align-items-center">
+                                <div class=" d-flex align-items-center">
+                                    <i class=" mx-2 feather feather-message-circle"></i>
+                                    New Order
+                                </div>
+                                <span class=" nav-item-noti bg-white text-black">7</span>
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link d-flex justify-content-between align-items-center">
+                                <div class=" d-flex align-items-center">
+                                    <i class=" mx-2 feather feather-box"></i>
+                                    Processed
+                                </div>
+                                <span class=" nav-item-noti bg-white text-black">3</span>
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link d-flex justify-content-between align-items-center">
+                                <div class=" d-flex align-items-center">
+                                    <i class=" mx-2 feather feather-send"></i>
+                                    Shipped
+                                </div>
+                                <span class=" nav-item-noti bg-white text-black">20</span>
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link d-flex justify-content-between align-items-center">
+                                <div class=" d-flex align-items-center">
+                                    <i class=" mx-2 feather feather-user-check"></i>
+                                    Returned
+                                </div>
+                                <span class=" nav-item-noti bg-white text-black">15</span>
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link d-flex justify-content-between align-items-center">
+                                <div class=" d-flex align-items-center">
+                                    <i class=" mx-2 feather feather-alert-circle"></i>
+                                    Reports
+                                </div>
+                                <span class=" nav-item-noti bg-white text-black">1</span>
+                            </a>
+                        </li>
+                        <li class=" nav-divider"></li>
+
+                        <!-- Costomers -->
+                        <li class=" text-black-50 fw-bold fs-6 ps-2 mb-2">
+                            Costomers
+                        </li>
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link d-flex justify-content-between align-items-center">
+                                <div class=" d-flex align-items-center">
+                                    <i class=" mx-2 feather feather-users"></i>
+                                    Costomers
+                                </div>
+                                <span class=" nav-item-noti bg-white text-black">9</span>
+                            </a>
+                        </li>
+                        <li class=" nav-divider"></li>
+
+                        <!-- Manage shop -->
+                        <li class=" text-black-50 fw-bold fs-6 ps-2 mb-2">
+                            Products Manage
+                        </li>
+                        <hr class=" mb-1 mt-0">
+                        <li class="nav-item rounded mb-1">
+                            <a href="html/list_item.html" class=" nav-link d-flex justify-content-between align-items-center">
+                                <div class=" d-flex align-items-center">
+                                    <i class=" mx-2 feather feather-list"></i>
+                                    List Item
+                                </div>
+                                <span class=" nav-item-noti bg-white text-black">14</span>
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">
+                            <a href="html/add_item.html" class=" nav-link">
+                                <i class=" mx-2 feather feather-plus-circle"></i>
+                                Add Item
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">
+                            <a href="#" class=" nav-link">
+                                <i class=" mx-2 feather feather-minus-circle"></i>
+                                Remove Item
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">
+                            <a href="#" class=" nav-link d-flex justify-content-between align-items-center">
+                                <div class=" d-flex align-items-center">
+                                    <i class=" mx-2 feather feather-star"></i>
+                                    Reviews
+                                </div>
+                                <span class=" nav-item-noti bg-white text-black">8</span>
+                            </a>
+                        </li>
+                        <li class=" nav-divider"></li>
+
+                        <!-- Account Management -->
+                        <li class=" text-black-50 fw-bold fs-6 ps-2 mb-2">
+                            Account Management
+                        </li>
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link">
+                                <i class=" mx-2 feather feather-user"></i>
+                                Account
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link">
+                                <i class=" mx-2 feather feather-image"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item rounded mb-1">                           
+                            <a href="#" class=" nav-link">
+                                <i class=" mx-2 feather feather-log-out"></i>
+                                Sign-Out
+                            </a>
+                        </li>
+                        <li class=" nav-divider"></li>
+
+                    </ul>
+                    <!-- sidebar navigation end -->
+                </div>
+            </div>
+            <!-- sidebar end -->
+
+            <!-- content start -->
+            <div class="content col-12 col-lg-9 col-xl-10 px-2">
+                <div class="row p-2">
+                    <!-- content header or navbar start -->
+                    <div class=" col-12 header">
+                        <div class=" navbar bg-primary rounded p-2 shadow-lg">
+                            <div class=" row w-100 justify-content-between">
+                                <div class=" col-5 col-sm-2 d-block d-lg-none">
+                                    <button class="show-sidebar-btn btn btn-light">
+                                        <i class=" feather feather-menu"></i>
+                                    </button>
+                                </div>
+                                <div class=" col-sm-7 col-lg-8 search-bar-div">
+                                    <form class=" form w-100 d-flex justify-content-center">
+                                        <div class="search-bar form-inline d-flex justify-content-center">
+                                            <input type="search" name="search" id="search" placeholder="Search..." class=" form-control me-3 w-75">
+                                            <button class=" btn btn-light d-none d-md-block">
+                                                <i class=" feather-search w-25"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class=" col-5 col-sm-3 col-lg-4">
+                                    <div class=" d-flex justify-content-end">
+                                        <div class=" dropdown">
+                                            <a href="#" class=" d-flex align-items-center text-white text-decoration-none text-small dropdown-toggle" id="dropdownUser" data-bs-toggle='dropdown' aria-expanded="false">
+                                                <img src="img/user/avatar3.jpg" alt="user1" id="user1" class=" rounded-circle mx-2">
+                                                <strong>John Mik</strong>
+                                            </a>
+                                            <ul class=" dropdown-menu text-small shadow" aria-labelledby="dropdownUser">
+                                                <li><a href="#" class="dropdown-item">Profile</a></li>
+                                                <li><a href="#" class="dropdown-item">Account</a></li>
+                                                <li><a href="#" class="dropdown-item">Settings</a></li>
+                                                <li class=" dropdown-divider"></li>
+                                                <li><a href="#" class="dropdown-item">Sign-Out</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content header or navbar end -->
+
+                    <!-- content body start -->
+                    <div class=" col-12">
+                        <div class=" row mt-4 mb-3">
+                            <!-- search bar for mobile -->
+                            <div class=" search-bar-phone col-12 mb-3 w-100 d-flex justify-content-center d-sm-none">
+                                <div class=" w-100 d-flex justify-content-center">
+                                    <div class=" form-inline w-100 d-flex justify-content-between">
+                                        <input type="search" name="search" id="search" placeholder="Search..." class=" form-control me-3 w-75">
+                                        <button class=" btn btn-light">
+                                            <i class=" feather-search w-25"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- status card start -->
+                            <div class=" col-12 col-md-6 col-xl-3 mb-3">
+                                <div class=" card status-card" onclick="go('https://www.google.com')">
+                                    <div class=" card-body">
+                                        <div class=" row d-flex justify-content-center">
+                                            <div class=" col-4 d-flex justify-content-center align-items-center">
+                                                <i class=" text-primary feather-shopping-cart" style="font-size: 2.5rem;"></i>
+                                            </div>
+                                            <div class=" col-7 d-flex flex-column">
+                                                <span class=" counter fs-5">45</span>
+                                                <hr style="margin: .5rem 0;">
+                                                <span class=" text-danger fw-bolder" style="font-size: .85rem;">New Order</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-12 col-md-6 col-xl-3 mb-3">
+                                <div class=" card status-card">
+                                    <div class=" card-body">
+                                        <div class=" row d-flex justify-content-center">
+                                            <div class=" col-4 d-flex justify-content-center align-items-center">
+                                                <i class=" text-primary feather-user" style="font-size: 2.5rem;"></i>
+                                            </div>
+                                            <div class=" col-7 d-flex flex-column">
+                                                <span class=" counter fs-5">849</span>
+                                                <hr style="margin: .5rem 0;">
+                                                <span class=" text-black-50 fw-bolder" style="font-size: .85rem;">User</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-12 col-md-6 col-xl-3 mb-3">
+                                <div class=" card status-card">
+                                    <div class=" card-body">
+                                        <div class=" row d-flex justify-content-center">
+                                            <div class=" col-4 d-flex justify-content-center align-items-center">
+                                                <i class=" text-primary feather-package" style="font-size: 2.5rem;"></i>
+                                            </div>
+                                            <div class=" col-7 d-flex flex-column">
+                                                <span class=" counter fs-5">2450</span>
+                                                <hr style="margin: .5rem 0;">
+                                                <span class=" text-black-50 fw-bolder" style="font-size: .85rem;">Item</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-12 col-md-6 col-xl-3 mb-3">
+                                <div class=" card status-card">
+                                    <div class=" card-body">
+                                        <div class=" row d-flex justify-content-center">
+                                            <div class=" col-4 d-flex justify-content-center align-items-center">
+                                                <i class=" text-primary feather-map-pin" style="font-size: 2.5rem;"></i>
+                                            </div>
+                                            <div class=" col-7 d-flex flex-column">
+                                                <span class=" counter fs-5">19</span>
+                                                <hr style="margin: .5rem 0;">
+                                                <span class=" text-black-50 fw-bolder" style="font-size: .85rem;">Locations</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <!-- status card end -->
+                        </div>
+                    </div>
+                    <div class=" col-12">
+                        <div class=" row">
+                            <!-- Order & Viewer Chart Start -->
+                            <div class=" col-12 col-xl-7 mb-5">
+                                <div class="chartLineCard card">
+                                    <div class=" card-body">
+                                        <div class=" d-flex justify-content-between align-items-center">
+                                            <h4 class=" m-0">Order & Viewer</h4>
+                                            <div class="">
+                                                <img src="img/user/avatar1.jpg" class="chartUserImg rounded-circle" width="40" height="40">
+                                                <img src="img/user/avatar2.jpg" class="chartUserImg rounded-circle" width="40" height="40">
+                                                <img src="img/user/avatar6.jpg" class="chartUserImg rounded-circle" width="40" height="40">
+                                                <img src="img/user/avatar4.jpg" class="chartUserImg rounded-circle" width="40" height="40">
+                                                <img src="img/user/avatar5.jpg" class="chartUserImg rounded-circle" width="40" height="40">
+                                            </div>
+                                        </div>
+                                        <hr class=" m-2">
+                                        <canvas id="OrderChart" height="150"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Order & Viewer Chart End -->
+
+                            <!-- Product Slick Card Start -->
+                            <div class=" col-12 col-sm-6 col-xl-5 d-flex align-items-end mb-5">
+                                <div class=" product-card card shadow-lg">
+                                    <div class=" card-body">
+                                        <div class=" product-slick">
+                                            <div class=" d-flex flex-column">
+                                                <div class=" row">
+                                                    <div class=" col-5 product-detil d-flex flex-column justify-content-end">
+                                                        <span class=" fs-5 fw-bold">USB-512GB</span>
+                                                        <span class=" fs-6 text-secondary">42,000 MMK</span>
+                                                    </div>
+                                                    <div class=" slick-img-div col-7 " style="background-image: url(img/items/item1.png);"></div>
+                                                </div>
+                                                <div class=" p-3">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column">
+                                                <div class=" row">
+                                                    <div class=" col-5 product-detil d-flex flex-column justify-content-end">
+                                                        <span class=" fs-5 fw-bold">Note Book</span>
+                                                        <span class=" fs-6 text-secondary">12,000 MMK</span>
+                                                    </div>
+                                                   <div class=" slick-img-div col-7 " style="background-image: url(img/items/item2.png);"></div>
+                                                </div>
+                                                <div class=" p-3">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column">
+                                                <div class=" row">
+                                                    <div class=" col-5 product-detil d-flex flex-column justify-content-end">
+                                                        <span class=" fs-5 fw-bold">Airpod Pro</span>
+                                                        <span class=" fs-6 text-secondary">75,000 MMK</span>
+                                                    </div>
+                                                   <div class=" slick-img-div col-7 " style="background-image: url(img/items/item3.png);"></div>
+                                                </div>
+                                                <div class=" p-3">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">88%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" d-flex flex-column">
+                                                <div class=" row">
+                                                    <div class=" col-5 product-detil d-flex flex-column justify-content-end">
+                                                        <span class=" fs-5 fw-bold">PlayStation-5</span>
+                                                        <span class=" fs-6 text-secondary">800,000 MMK</span>
+                                                    </div>
+                                                   <div class=" slick-img-div col-7 " style="background-image: url(img/items/item4.png);"></div>
+                                                </div>
+                                                <div class=" p-3">
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" style="width: 41%;" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">41%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product Slick Card End -->
+
+                            <!-- Order From Location Chart Start -->
+                            <div class=" col-12 col-sm-6 col-xl-5 mb-5">
+                                <div class="chartLineCard card">
+                                    <div class=" card-body">
+                                        <div class=" d-flex justify-content-between align-items-center">
+                                            <h4 class=" m-0">Order From Location</h4>
+                                            <i class=" feather-pie-chart text-primary fs-4"></i>
+                                        </div>
+                                        <hr class=" m-2">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Order From Location Chart End -->
+
+                            <!-- Subcriber table Start -->
+                            <div class=" col-12 col-xl-7 mb-5" style="height: 450px;">
+                                <div class=" card h-100 shadow-lg">
+                                    <div class=" h-100" style="overflow-y: scroll;">
+                                        <div class=" d-flex justify-content-between align-items-center p-3">
+                                            <h4 class=" m-0 text-primary">Subcriber List</h4>
+                                            <i class=" feather-database text-primary fs-4"></i>
+                                        </div>
+                                        <table class=" table table-hover" id=" data-table">
+                                            <thead>
+                                               <tr>
+                                                  <th>Name</th>
+                                                  <th>Company</th>
+                                                  <th>Start Date</th>
+                                                  <th>Status</th>
+                                                  <th>Amount</th>
+                                                  <th>Action</th>
+                                               </tr>
+                                            </thead>
+                                            <tbody>
+                                               <tr>
+                                                  <td>Michael Austin</td>
+                                                  <td>ABC Fintech LTD.</td>
+                                                  <td>Jan 1,2019</td>
+                                                  <td><span class=" badge bg-danger">Close</span></td>
+                                                  <td>$ 1000.00</td>
+                                                  <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                               </tr>
+                                               <tr>
+                                                  <td>Aldin Rakić</td>
+                                                  <td>ACME Pvt LTD.</td>
+                                                  <td>Jan 10,2019</td>
+                                                  <td><span class=" badge bg-success">Open</span></td>
+                                                  <td>$ 3000.00</td>
+                                                  <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                               </tr>
+                                               <tr>
+                                                  <td>İris Yılmaz</td>
+                                                  <td>Collboy Tech LTD.</td>
+                                                  <td>Jan 12,2019</td>
+                                                  <td><span class=" badge bg-success">Open</span></td>
+                                                  <td>$ 2000.00</td>
+                                                  <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                               </tr>
+                                               <tr>
+                                                  <td>Lidia Livescu</td>
+                                                  <td>My Fintech LTD.</td>
+                                                  <td>Jan 14,2019</td>
+                                                  <td><span class=" badge bg-danger">Close</span></td>
+                                                  <td>$ 1100.00</td>
+                                                  <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                               </tr>
+                                               <tr>
+                                                <td>Michael Austin</td>
+                                                <td>ABC Fintech LTD.</td>
+                                                <td>Jan 1,2019</td>
+                                                <td><span class=" badge bg-danger">Close</span></td>
+                                                <td>$ 1000.00</td>
+                                                <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td>Aldin Rakić</td>
+                                                <td>ACME Pvt LTD.</td>
+                                                <td>Jan 10,2019</td>
+                                                <td><span class=" badge bg-success">Open</span></td>
+                                                <td>$ 3000.00</td>
+                                                <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td>İris Yılmaz</td>
+                                                <td>Collboy Tech LTD.</td>
+                                                <td>Jan 12,2019</td>
+                                                <td><span class=" badge bg-success">Open</span></td>
+                                                <td>$ 2000.00</td>
+                                                <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td>Lidia Livescu</td>
+                                                <td>My Fintech LTD.</td>
+                                                <td>Jan 14,2019</td>
+                                                <td><span class=" badge bg-danger">Close</span></td>
+                                                <td>$ 1100.00</td>
+                                                <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                             </tr>  
+                                             <tr>
+                                                <td>Michael Austin</td>
+                                                <td>ABC Fintech LTD.</td>
+                                                <td>Jan 1,2019</td>
+                                                <td><span class=" badge bg-danger">Close</span></td>
+                                                <td>$ 1000.00</td>
+                                                <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td>Aldin Rakić</td>
+                                                <td>ACME Pvt LTD.</td>
+                                                <td>Jan 10,2019</td>
+                                                <td><span class=" badge bg-success">Open</span></td>
+                                                <td>$ 3000.00</td>
+                                                <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td>İris Yılmaz</td>
+                                                <td>Collboy Tech LTD.</td>
+                                                <td>Jan 12,2019</td>
+                                                <td><span class=" badge bg-success">Open</span></td>
+                                                <td>$ 2000.00</td>
+                                                <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td>Lidia Livescu</td>
+                                                <td>My Fintech LTD.</td>
+                                                <td>Jan 14,2019</td>
+                                                <td><span class=" badge bg-danger">Close</span></td>
+                                                <td>$ 1100.00</td>
+                                                <td class="center-align"><a href="#"><i class=" feather-trash-2 text-danger"></i></a></td>
+                                             </tr>
+                                            </tbody>
+                                         </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Subcriber Table End -->
+                            
+                        </div>
+                    </div>
+                    <!-- content body end -->
+                </div>
+            </div>
+            <!-- content end -->
+        </div>
+    </section>
+
+<script src="vendor/jquery-3.6.0.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/counter_up/counter_up.js"></script>
+<script src="vendor/way_point/jquery.waypoints.js"></script>
+<script src="vendor/chart.js-3.7.0/package/dist/chart.min.js"></script>
+<script src="vendor/slick-master/slick/slick.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
